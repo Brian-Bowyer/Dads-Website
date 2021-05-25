@@ -1,0 +1,5 @@
+.pytest_cache/v/cache/nodeids
+.vscode
+.site-env
+.webassets-cache
+*.pyc

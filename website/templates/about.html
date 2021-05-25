@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block title %}Paul Bowyer - About{% endblock %}
+
+{% block content %}
+    <main class="container">
+        <div class='row content-card'>
+            <div class="col-sm-2 about-img">
+                <img src="{{url_for('.static', filename='photo.jpg')}}" style="width: 300px;">
+            </div>
+            <div class='col-sm-10 about-content' style="padding: 150px 0">
+                <h1>Paul Bowyer</h1>
+
+                <h2>Ph.D., 1981, Northwestern University</h2>
+            </div>
+        </div>
+        <div class="row content-card">
+            <div class="col-sm-12">
+                <h3>Research Interests</h3>
+                <p>My interests are in the philosophy of mind and questions of the relationship between mind
+                and reality. This leads to questions concerning how we should describe the external world
+                as distinct from our knowledge of it, what does it mean for a mental concept to refer to a
+                real object, what is the nature of the relationship between concept and referent, and so on.
+                My work has dealt with the language of thought hypothesis, and with the problem of
+                representation. I am currently working on a paper about the “twin earth” thought
+                experiment. I tend to downplay in my work the use of intuition to support general
+                statements. Instead, I try to limit my use of intuitions to those that concern what particular
+                thoughts, feelings, and actions people would exhibit in various hypothetical situations. The
+                ultimate goal of this approach is to develop models that can account in detail for these
+                phenomena.</p>
+                
+                <p>In recent years, I have concentrated on the study of the issues raised by the Language of
+                Thought Hypothesis, as it relates to the ultimate nature of thought, and the nature of truth
+                and reference.</p>
+
+                <h3>Works:</h3>
+                <ul>
+                <li>Facts, Truth, and Realism: Toward a Multi-level Theory of Knowledge. Sorites, #18 --
+                February 2007. Pp. 109-128.</li>
+                <li>In Defence of the Language of Thought Hypothesis. Unpublished manuscript, 2011.</li>
+                <li>A Hypothesis Concerning the Nature of Thought. Unpublished manuscript, 2021.</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    {{super()}}
+{% endblock %}

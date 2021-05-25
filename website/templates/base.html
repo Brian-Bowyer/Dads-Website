@@ -1,0 +1,28 @@
+{% extends "bootstrap/base.html" %}
+
+{% block navbar %}
+    <header>
+        <nav class='navbar'>
+            <div id='navbar' class='navbar-collapse collapse'>
+                <ul class='nav navbar-nav navbar-right'>
+                    <li><a href = "{{url_for('index')}}">Home</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+{% endblock %}
+
+{% block content %}
+    {% include "footer.html" %}
+{% endblock %}
+
+{% block styles %}
+    {{super()}}
+    <link rel="stylesheet" href="{{url_for('.static', filename='style.css')}}">
+    <link href="{{url_for('.static', filename='lightbox2/dist/css/lightbox.css')}}" rel="stylesheet">
+{% endblock %}
+
+{% block scripts %}
+    {{super()}}
+    <script src="{{url_for('.static', filename='lightbox2/dist/js/lightbox.js')}}"></script>
+{% endblock %}
